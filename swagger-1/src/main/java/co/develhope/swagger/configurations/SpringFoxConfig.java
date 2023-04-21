@@ -15,7 +15,7 @@ import java.util.Collections;
 
 @EnableSwagger2
 @Configuration
-public class SpringFoxConfig {
+public class SpringFoxConfig{
 
     @Bean
     public Docket api() {
