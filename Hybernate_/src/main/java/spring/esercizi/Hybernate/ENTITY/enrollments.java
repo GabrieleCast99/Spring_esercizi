@@ -1,31 +1,26 @@
-package esrcitazione.checkpoint3.ENTITY;
+package spring.esercizi.Hybernate.ENTITY;
+
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-
-
 @Entity
+@AllArgsConstructor
 @Table
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
-public class Acquisto {
+public class enrollments {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @Column()
-    private LocalDateTime timeStamp;
     @ManyToOne
-    private Auto auto;
+    private Classes classes;
 
     @ManyToOne
-    private Utente utente;
-
+    private Student student;
 
 }
