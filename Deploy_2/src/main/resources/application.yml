@@ -1,0 +1,15 @@
+server:
+  port: 7070
+environment: prod
+myCustomEnvs:
+  devName: Gabriele Castiglione
+
+---
+environment: test
+server:
+  port: 4000
+---
+server:
+  port: 5000
+
+
