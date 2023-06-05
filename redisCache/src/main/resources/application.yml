@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: test
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
+
+redis:
+  database: Gabriele-free-db
+  password: *
+  host: redis-13035.c135.eu-central-1-1.ec2.cloud.redislabs.com
+  port: 13035
