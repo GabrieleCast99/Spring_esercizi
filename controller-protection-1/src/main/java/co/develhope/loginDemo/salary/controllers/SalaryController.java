@@ -30,11 +30,14 @@ public class SalaryController {
         return salaryRepository.findAll();
     }
 
-    @GetMapping("/user/{id}")
+
+
+    @GetMapping("/salary/user/{id}/salary")
     @PreAuthorize("hasRole('"+ Roles.ADMIN +"')")
-    public Salary getSalaryByUid(@PathVariable Long id){
-        return salaryRepository.findByUserId(id);
+    public Salary getSalaryByUid(@PathVariable Long id) {
+        return  salaryRepository.findByUserId(id);
     }
+
 
     @PostMapping("/user/{id}")
     @PreAuthorize("hasRole('"+ Roles.ADMIN +"')")

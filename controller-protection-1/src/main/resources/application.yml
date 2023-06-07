@@ -10,10 +10,10 @@ spring:
     console:
       enabled: true
   mail:
-    host: smtp.gmail.com
+    host: smtp.sendgrid.com
     port: 587
-    username: XXXXXXXXXX
-    password: XXXXXXXXXX
+    username: *
+    password: *
     properties:
       mail:
         smtp:

@@ -19,6 +19,5 @@ public class Salary {
     private User user;
 
     public void setUser(Optional<User> user) {
-
     }
 }
